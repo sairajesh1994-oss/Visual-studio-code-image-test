@@ -14,13 +14,21 @@
        AUTH SCREEN
   ══════════════════════════════════════════ -->
   <div id="auth-screen">
-    <div class="auth-card">
-      <div class="auth-logo">
-        <div class="auth-logo-icon">🚀</div>
-        <div class="auth-logo-text">DevOps <span>Academy</span></div>
+    <div class="auth-layout">
+      <div class="auth-image-panel">
+        <img src="Image/Tiger.jpg" alt="DevOps Academy illustration" class="auth-side-image" />
+        <div class="auth-image-copy">
+          <h1>Welcome to DevOps Academy</h1>
+          <p>Sign in or register to manage your courses, assignments, and announcements.</p>
+        </div>
       </div>
+      <div class="auth-card">
+        <div class="auth-logo">
+          <div class="auth-logo-icon">🚀</div>
+          <div class="auth-logo-text">DevOps <span>Academy</span></div>
+        </div>
 
-      <div class="auth-tabs">
+        <div class="auth-tabs">
         <button class="auth-tab active" id="tab-login" onclick="switchTab('login')">Login</button>
         <button class="auth-tab" id="tab-register" onclick="switchTab('register')">Register</button>
       </div>

@@ -65,12 +65,57 @@ body {
   padding: 1.5rem;
 }
 
+.auth-layout {
+  display: flex;
+  align-items: stretch;
+  gap: 2rem;
+  width: 100%;
+  max-width: 980px;
+}
+
+.auth-image-panel {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  border-radius: var(--radius-lg);
+  background: rgba(255,255,255,0.16);
+  box-shadow: 0 12px 40px rgba(0,0,0,0.16);
+  min-width: 320px;
+}
+
+.auth-side-image {
+  width: 100%;
+  max-width: 360px;
+  height: auto;
+  border-radius: 18px;
+  margin-bottom: 1.5rem;
+  box-shadow: var(--shadow);
+}
+
+.auth-image-copy {
+  color: #fff;
+  text-align: center;
+}
+
+.auth-image-copy h1 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.auth-image-copy p {
+  color: rgba(255,255,255,.87);
+  line-height: 1.6;
+}
+
 .auth-card {
   background: var(--surface);
   border-radius: var(--radius-lg);
   padding: 2.5rem 2rem;
   width: 100%;
-  max-width: 400px;
+  max-width: 420px;
   box-shadow: var(--shadow-md);
 }
 
@@ -79,6 +124,16 @@ body {
   align-items: center;
   gap: 10px;
   margin-bottom: 2rem;
+}
+
+@media (max-width: 960px) {
+  .auth-layout {
+    flex-direction: column;
+  }
+
+  .auth-image-panel {
+    min-width: auto;
+  }
 }
 
 .auth-logo-icon {
@@ -598,3 +653,14 @@ tbody tr:hover { background: var(--surface2); }
 ::-webkit-scrollbar { width: 6px; height: 6px; }
 ::-webkit-scrollbar-track { background: transparent; }
 ::-webkit-scrollbar-thumb { background: var(--border); border-radius: 99px; }
+.auth-logo-img {
+  width: 48px;
+  height: auto;
+  margin-right: 12px;
+}
+
+.hero-banner img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
