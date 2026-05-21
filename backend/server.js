@@ -8,7 +8,11 @@ const express = require('express');
 const mongoose = require('mongoose');
 const cors = require('cors');
 const path = require('path');
+<<<<<<< HEAD
 require('dotenv').config({ override: true });
+=======
+require('dotenv').config();
+>>>>>>> f3811ffa308fface47107dd2bbcf6c1d56e51e81
 
 const app = express();
 
